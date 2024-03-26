@@ -2,4 +2,7 @@ pip install scikit-learn
 pip install pandas
 pip install librosa
 pip install thinkx
+pip install scikit-learn-intelex
+pip install seaborn
+pip install optuna
 change thinkdsp fraction_gdc to math_gdc

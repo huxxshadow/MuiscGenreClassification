@@ -1,1 +1,5 @@
 pip install scikit-learn
+pip install pandas
+pip install librosa
+pip install thinkx
+change thinkdsp fraction_gdc to math_gdc

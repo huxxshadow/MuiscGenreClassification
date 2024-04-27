@@ -1,3 +1,13 @@
+```markdown
+# Music Genre Classification Project
+
+## Introduction
+This project is used for the automatic classification of music genres, using various machine learning models to identify and classify music files.
+
+## 1. Environment Settings
+To run this project, install the following Python libraries:
+
+```bash
 pip install scikit-learn
 pip install pandas
 pip install librosa
@@ -5,4 +15,35 @@ pip install thinkx
 pip install scikit-learn-intelex
 pip install seaborn
 pip install optuna
-change thinkdsp fraction_gdc to math_gdc
+```
+
+## 2. Prepare Dataset
+In the `SimpleData/train` directory, we have prepared a training dataset featuring 10 types of music: blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, and rock. To better mimic human auditory perception, run the following to generate Mel spectrograms for visualization of all music types:
+```bash
+run dataVisualization.ipynb
+```
+
+## 3. Choose Best Model
+To compare the performance of various classifiers such as SGD classifier, decision tree classifier, KNN classifier, random forest classifier, and linear support vector machine classifier, execute:
+```bash
+run MachineLearning.ipynb
+```
+
+## 4. Evaluation
+To evaluate the model, place any music file you wish to classify in `/MusicGenreClassification/input`. Then, assess the model's performance by running:
+```bash
+run FinalTool.ipynb
+```
+
+## Reference
+- Georgy Gospodinov. (2023). Music Genre Recognition. Kaggle. [https://kaggle.com/competitions/park-spring-2023-music-genre-recognition](https://kaggle.com/competitions/park-spring-2023-music-genre-recognition)
+- Rob Mulla. (2022). Music Classification. Kaggle. [https://kaggle.com/competitions/kaggle-pog-series-s01e02](https://kaggle.com/competitions/kaggle-pog-series-s01e02)
+- Patil, S.A., Pradeepini, G. & Komati, T.R. Novel mathematical model for the classification of music and rhythmic genre using deep neural network. J Big Data 10, 108 (2023). [https://doi.org/10.1186/s40537-023-00789-2](https://doi.org/10.1186/s40537-023-00789-2)
+- Bahuleyan, H. (2018). Music genre classification using machine learning techniques. arXiv preprint arXiv:1804.01149. [https://arxiv.org/abs/1804.01149](https://arxiv.org/abs/1804.01149)
+
+
+## Contact
+For questions or suggestions, please contact the developer through GitHub Issues.
+```
+
+This README provides all necessary steps from setting up the environment to evaluating the models and includes references to expand on the academic and practical background related to the project.
